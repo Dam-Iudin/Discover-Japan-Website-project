@@ -1,0 +1,27 @@
+[
+	{
+		"path": "$ROOTPATH$\\css\\style.css",
+		"bookmarks": [
+			{
+				"line": 528,
+				"column": 0,
+				"label": "WRAPPER"
+			},
+			{
+				"line": 632,
+				"column": 0,
+				"label": "search form field"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\index.html",
+		"bookmarks": [
+			{
+				"line": 58,
+				"column": 10,
+				"label": "search form input"
+			}
+		]
+	}
+]
