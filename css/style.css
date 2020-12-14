@@ -623,7 +623,7 @@ body {
     background: url(../img/Hero.png) no-repeat;
     background-size: cover;
     padding-top: 263px;
-    padding-bottom: 391px;
+    padding-bottom: 390px;
 
 
 
@@ -683,7 +683,7 @@ body {
 
 .search-form_submit {
     padding: 8px 25px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -797,6 +797,9 @@ body {
 
 /* places styles start */
 
+.places {
+    margin-bottom: 131px;
+}
 
 .places_caption {
     display: flex;
@@ -819,14 +822,240 @@ body {
     text-decoration: none;
     background: url(../img/svg/arrow\ right.svg) no-repeat right center;
     padding-right: 59px;
-   
+
 }
 
-.places_view-all:hover, .places_view-all:focus  {
+.places_view-all:hover,
+.places_view-all:focus {
     opacity: .65;
 }
-    
-
-
 
 /* places styles end */
+
+/* PLACES_CARDS STARTS */
+
+.places_cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places_card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places_card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places_card:hover .places_card-pic {
+    transform: scale(1.05);
+    transition: 2s;
+
+}
+
+.places_card-title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+    color: #FFFFFF;
+}
+
+
+.places_card_size_lg {
+    grid-column: span 3;
+}
+
+.places_card_size_sm {
+    grid-column: span 2;
+}
+
+.places_card-pic {
+    /* height: 354px; */
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.places_card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+
+/* PLACES_CARDS END */
+
+/* TOURS STYLES START */
+
+.tours {
+
+    margin-bottom: 139px;
+}
+
+.wrapper_full {}
+
+.tours_tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+
+
+}
+
+.tour {
+    margin-bottom: 77px;
+}
+
+.tour_pic {}
+
+.tour_thumb {}
+
+.tour_info {}
+
+.tour_title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #102746;
+    margin-bottom: 85px;
+}
+
+.tour_desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 58px;
+}
+
+.tour_more {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url(../img/svg/arrow\ right.svg) no-repeat right center;
+    padding-right: 59px;
+}
+
+.tour_more:hover,
+.tour_more:focus {
+    opacity: .65;
+}
+
+
+.tour_pic:hover {
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+
+/* Top places styles start */
+
+.top {
+    margin-bottom: 86px;
+}
+
+.top_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+    align-items: center;
+}
+
+.top_title {
+    margin-bottom: 54px;
+}
+
+
+.top_card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+
+.top_card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+
+.top_card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 auto 0 0;
+}
+
+.top_card-likes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    background: url(../img/svg/heart-icon.svg) no-repeat right;
+    margin-right: 14px;
+}
+
+.top_card-comments {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 23px;
+    background: url(../img/svg/Path-icon.svg) no-repeat right;
+}
+
+.top_card-desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 31px;
+}
+
+.top_card-more {
+    padding: 12px 19px;
+    /* border-radius: 10px; */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #1B7DFF;
+    text-decoration: none;
+}
+
+.top_card-more:hover,
+.top_card-more:focus,
+.top_card-more:active {
+    background: #0256c7
+}
+
+/* Top places styles end*/
