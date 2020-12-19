@@ -3,12 +3,12 @@
 		"path": "$ROOTPATH$\\css\\style.css",
 		"bookmarks": [
 			{
-				"line": 528,
+				"line": 530,
 				"column": 0,
 				"label": "WRAPPER"
 			},
 			{
-				"line": 658,
+				"line": 698,
 				"column": 0,
 				"label": "search form field"
 			}
@@ -18,7 +18,7 @@
 		"path": "$ROOTPATH$\\index.html",
 		"bookmarks": [
 			{
-				"line": 58,
+				"line": 62,
 				"column": 10,
 				"label": "search form input"
 			}
