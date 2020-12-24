@@ -8,15 +8,5 @@
 				"label": "search form field"
 			}
 		]
-	},
-	{
-		"path": "$ROOTPATH$\\index.html",
-		"bookmarks": [
-			{
-				"line": 65,
-				"column": 10,
-				"label": "search form input"
-			}
-		]
 	}
 ]
