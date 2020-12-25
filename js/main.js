@@ -42,14 +42,12 @@
         let targetPosition = target.getBoundingClientRect().top - headerElHeight;
         let startPosition = window.pageYOffset;
         let startTime = null;
-    
         const ease = function(t,b,c,d) {
             t /= d / 2;
             if (t < 1) return c / 2 * t * t + b;
             t--;
             return -c / 2 * (t * (t - 2) - 1) + b;
         };
-    
         const animation = function(currentTime){
             if (startTime === null) startTime = currentTime;
             const timeElapsed = currentTime - startTime;
